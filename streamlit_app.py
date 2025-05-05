@@ -14,6 +14,10 @@ with st.expander('**Data**'):
   X = df.drop('Stroke', axis=1)
   X
 
-  st.write('**y**')
+  st.write(('**y**')('**z**')('**a**))
   y = df.Stroke
   y
+  z = df.HighBP
+  z
+  a = df.Diabetes
+  a
