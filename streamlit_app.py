@@ -11,10 +11,10 @@ with st.expander('Data'):
   df
 
   st.write('**X**')
-  X = df.drop('Stroke, HighBP, Diabetes', axis=1)
+  X = df.drop('Stroke_HighBP_Diabetes', axis=1)
   X
 
-  st.write('**y**''**z**''**a**')
+  st.write('**y**'_'**z**'_'**a**')
   y = df.'Stroke'
   y
   z = df.'HighBP"
