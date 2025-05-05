@@ -18,4 +18,6 @@ with st.expander('**Data**'):
   Y = df.Stroke
   Z = df.HighBP
   A = dr.Diabetes
-  Y, Z, A
+  Y
+  Z
+  A
