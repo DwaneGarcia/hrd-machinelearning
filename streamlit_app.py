@@ -15,5 +15,5 @@ with st.expander('**Data**'):
   X
 
   st.write('**y**')
-  y = df.'Stroke'
+  y = df.Stroke
   y
