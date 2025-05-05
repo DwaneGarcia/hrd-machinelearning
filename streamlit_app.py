@@ -15,7 +15,7 @@ with st.expander('**Data**'):
   X
 
   st.write('**y****z****a**')
-  y = df.Stroke
+  y = df.StrokeHighBPDiabetes
   y
   z = df.HighBP
   z
