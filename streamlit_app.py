@@ -1,9 +1,13 @@
 import streamlit as st
 import pandas as pd
+from sklearn import datasets
+from sklearn.ensemble import RandomForestClassifier
 
 st.title('Hypertension, Stroke, and Diabetes Predictor')
 
-st.info('HSD is a machine learning web application for simultaneously predicting Hypertension, Stroke, and Diabetes.')
+st.info('HSD is a machine learning web application for simultaneously predicting **Hypertension, Stroke, and Diabetes.**')
+
+st.sidebar.header('User Input Parameters')
 
 with st.expander('**Data**'):
   st.write('Raw Data')
