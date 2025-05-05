@@ -16,3 +16,4 @@ with st.expander('**Data**'):
 
   st.write('**y**')
   y = df.Stroke
+  y
