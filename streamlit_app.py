@@ -15,5 +15,5 @@ with st.expander('Data'):
   X
 
   st.write('**y**')
-  y = df.('Stroke,HighBP,Diabetes')
+  y = df.'Stroke''HighBP''Diabetes'
   y
