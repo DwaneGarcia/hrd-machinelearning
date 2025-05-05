@@ -20,5 +20,5 @@ with st.expander('**Data**'):
   A = df.Diabetes
   Y, Z, A
 
-with st.expander('Data Visualization'):
+with st.expander('**Data Visualization**'):
   st.scatter_chart(data=df, x='HighChol', y='HighBP', color='Stroke')
