@@ -1,13 +1,10 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# Hypertension, Stroke & Diabetes Predictor
 
-Description of the app ...
+HSD is a machine learning web application for predicting three of the world's most prevalent medical morbities; Hypertension, Stroke, and Diabetes.
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hsd-machinelearning.streamlit.app/)
 
 ## GitHub Codespaces
 
