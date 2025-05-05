@@ -16,5 +16,3 @@ with st.expander('**Data**'):
 
   st.write('**Y**')
   Y = df.drop('Stroke', axis=1)
-      df.drop('HighBP', axis=1)
-      df.drop('Diabetes', axis=1)
