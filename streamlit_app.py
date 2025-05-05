@@ -21,4 +21,6 @@ with st.expander('**Data**'):
   Y, Z, A
 
 with st.expander('**Data Visualization**'):
-  st.scatter_chart(data=df, x='HighChol', y='HighBP', color='Stroke')
+  st.scatter_chart(data=df, x='HighChol', y='BMI', color='Stroke')
+
+# Data preparation
