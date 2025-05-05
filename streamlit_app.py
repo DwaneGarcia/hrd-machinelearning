@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.title('Hypertension, Stroke, and Diabetes Predictor')
 
-st.write('Hello world!')
+st.info('HSD is a machine learning web application for simultaneously predicting Hypertension, Stroke, and Diabetes')
