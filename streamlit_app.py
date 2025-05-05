@@ -14,7 +14,7 @@ with st.expander('**Data**'):
   X = df.drop('Stroke', axis=1)
   X
 
-  st.write('(**y**)(**z**)(**a**)')
+  st.write('**y****z****a**')
   y = df.Stroke
   y
   z = df.HighBP
