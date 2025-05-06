@@ -88,4 +88,4 @@ df_prediction_proba = pd.DataFrame(prediction_proba)
 df_prediction_proba.columns = ['No Hypertension Risk', 'Has Hypertension Risk']
 df_prediction_proba.rename(columns={0: 'No Hypertension Risk',
                                     1: 'Has Hypertension Risk'})
-prediction_proba
+df_prediction_proba
