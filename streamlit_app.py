@@ -51,7 +51,7 @@ with st.sidebar:
           'thal': thal,
           'trestbps': trestbps,
           'chol': chol,
-          'thalach': thalac,
+          'thalach': thalach,
           'oldpeak': oldpeak}
   input_df = pd.DataFrame(data, index=[0])
   input_penguins = pd.concat([input_df, X], axis=0)
