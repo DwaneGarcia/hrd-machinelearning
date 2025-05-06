@@ -28,7 +28,7 @@ with st.sidebar:
   st.header('Input Features')
   #Age","Sex","HighChol","CholCheck","BMI","Smoker","HeartDiseaseorAttack","PhysActivity","Fruits","Veggies","HvyAlcoholConsump","GenHlth","MentHlth","PhysHlth","DiffWalk"
   Age = st.selectbox('Age', ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'))
-  Sex = st.selectboc('Sex', ('0', '1'))
+  Sex = st.selectbox('Sex', ('0', '1'))
 
 
   
