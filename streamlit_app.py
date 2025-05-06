@@ -12,8 +12,8 @@ with st.expander('**Data**'):
   df
 
   st.write('**X**')
-  X = df.drop('target', axis=1)
-  X
+  X_raw = df.drop('target', axis=1)
+  X_raw
 
   st.write('**Y**')
   Y = df.target
@@ -55,7 +55,7 @@ with st.sidebar:
           'thalach': thalach,
           'oldpeak': oldpeak}
   input_df = pd.DataFrame(data, index=[0])
-  input_disease = pd.concat([input_df, X], axis=0)
+  input_disease = pd.concat([input_df, X_raw], axis=0)
 
 with st.expander('**Input Features**'):
   st.write('**Input Disease**')
@@ -65,6 +65,9 @@ with st.expander('**Input Features**'):
 
 # Data Preparation
 # Encode
+
+X = input_disease[1:]
+input_row = input_disease[:1]
 
 with st.expander('**Data Preparation**'):
   st.write('**Encoded X (Input Disease)**')
@@ -78,7 +81,7 @@ clf = RandomForestClassifier()
 clf.fit(X, Y)
 
 ## Apply model to make predictions
-prediction = clf.predict(input_df)
-prediction_proba = clf.predict_poba(input_df)
+prediction = clf.predict(input_row)
+prediction_proba = clf.predict_poba(input_row)
 
 prediction_proba
