@@ -61,4 +61,13 @@ with st.expander('**Input Features**'):
   input_df
   st.write('**Combined Disease Data**')
   input_disease
+
+# Data Preparation
+# Encode
+
+with st.expander('Data Preparation'):
+  st.write('**Encoded X (Input Disease)**')
+  input_df
+  st.write('**Encoded Y (Input Disease)**')
+  Y
   
