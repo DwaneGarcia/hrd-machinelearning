@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
 
 st.title('Hypertension and Stroke Predictor')
 
@@ -65,9 +66,19 @@ with st.expander('**Input Features**'):
 # Data Preparation
 # Encode
 
-with st.expander('Data Preparation'):
+with st.expander('**Data Preparation**'):
   st.write('**Encoded X (Input Disease)**')
   input_df
   st.write('**Encoded Y (Input Disease)**')
   Y
   
+# Model Training and Inference
+## Train the ML model
+clf = RandomForestClassifier()
+clf.fit(X, Y)
+
+## Apply model to make predictions
+prediction = clf.predict(input_df)
+prediction_proba = clf.predict_poba(input_df)
+
+prediction_proba
