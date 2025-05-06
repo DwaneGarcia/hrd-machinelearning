@@ -33,8 +33,29 @@ with st.sidebar:
   exang = st.selectbox('Exercise Induced Angina', ('0', '1'))
   slope = st.selectbox('Slope of the peak exercise ST segment', ('0', '1', '2'))
   ca = st.selectbox('Number of major vessels (0–3) colored by flourosopy', ('0', '1', '2', '3', '4'))
-  thal = st. selectbox('Thalassemia (3: Normal; 6: Fixed defect; 7: Reversable defect)', ('1', '2', '3'))
+  thal = st. selectbox('Thalassemia (3: Normal; 6: Fixed defect; 7: Reversable defect)', ('0', '1', '2', '3'))
   trestbps = st.slider('Resting Blood Pressure (in mm Hg)', 94, 200, 94)
   chol = st.slider('Serum Cholestoral in mg/dl', 126, 564, 126)
   thalach = st.slider('Maximum Heart Rate Achieved', 71, 202, 71)
   oldpeak = st.slider('ST depression induced by exercise relative to rest', 0.0, 6.2, 0.0)
+
+  # Create a DataFrame for the input features
+  data = {'age': age,
+          'sex': sex,
+          'cp': cp,
+          'fbs': fbs,
+          'restecg': restecg,
+          'exang': exang,
+          'slope': slope,
+          'ca': ca,
+          'thal': thal,
+          'trestbps': trestbps,
+          'chol': chol,
+          'thalac': thalac,
+          'oldpeak': oldpeak}
+  input_df = pd.DataFrame(data, index=[0])
+  input_penguins = pd.concat([input_df, X], axis=0)
+
+input_df
+#input_penguins
+  
