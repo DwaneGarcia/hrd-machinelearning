@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
@@ -89,3 +90,8 @@ df_prediction_proba.columns = ['No Hypertension Risk', 'Has Hypertension Risk']
 df_prediction_proba.rename(columns={0: 'No Hypertension Risk',
                                     1: 'Has Hypertension Risk'})
 df_prediction_proba
+
+# Display predicted disease
+st.subheader('Disease Prediction')
+disease_risk = np.array(['No Hypertension Risk', 'Has Hypertension Risk'])
+st.success(str(disease_risk[prediction][0]))
