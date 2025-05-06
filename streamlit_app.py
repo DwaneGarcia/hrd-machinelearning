@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title('Hypertension and Stroke Predictor')
 
-st.info('Basty is a machine learning web application for simultaneously predicting **Hypertension and Stroke.**')
+st.info('Sebastian is a machine learning web application for simultaneously predicting **Hypertension and Stroke.**')
 
 with st.expander('**Data**'):
   st.write('Raw Data')
